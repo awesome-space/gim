@@ -9,7 +9,7 @@ import (
 )
 
 func initDB() *gorm.DB {
-	dsn := "xxxxxx:xxxxxxxxxxxxx@tcp(xxxxxxxxxxxxxx:xxxxxxxxxxxxx)/gim?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:he..123456@tcp(150.158.95.91:3306)/gim?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
 		DisableForeignKeyConstraintWhenMigrating: true,
 	})

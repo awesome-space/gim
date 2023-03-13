@@ -1,4 +1,4 @@
-package common
+package tool
 
 func Md5encoder(context string) string {
 
