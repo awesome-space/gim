@@ -1,6 +1,8 @@
 package model
 
-import "time"
+import (
+	"time"
+)
 
 type User struct {
 	BaseModel
@@ -17,6 +19,7 @@ type User struct {
 	LoginOutTime  *time.Time `gorm:"comment:退出时间"` // 退出时间
 }
 
-func TableName() string {
+// TableName 表名
+func (u *User) TableName() string {
 	return "im_user"
 }
