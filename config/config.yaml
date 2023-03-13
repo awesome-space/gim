@@ -1,0 +1,10 @@
+port: 8000
+mysql:
+  host: xxxxxxxxx
+  port: xxxxxxxxx
+  name: xxxxxxxxxxxxx
+  user: xxxxxxxxx
+  password: xxxxxxxxxxxx
+redis:
+  host: 127.0.0.1
+  port: 11
