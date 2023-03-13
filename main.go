@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/poeticalcode/gim/internal/global"
 	"github.com/poeticalcode/gim/internal/initialize"
 	"github.com/poeticalcode/gim/internal/router"
 )
@@ -15,6 +17,6 @@ func main() {
 	initialize.InitDB()
 
 	server := gin.Default()
-	router.RouterRegister(server)
-	server.Run(":9090")
+	router.RegisterRouter(server)
+	server.Run(fmt.Sprintf(":%d", global.ServerConfig.Port))
 }

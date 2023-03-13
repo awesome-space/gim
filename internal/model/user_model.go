@@ -4,6 +4,7 @@ import (
 	"time"
 )
 
+// User 对应 im_user
 type User struct {
 	BaseModel
 	UserName      string     `gorm:"comment:用户名"`  // 用户名

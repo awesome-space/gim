@@ -1,4 +1,4 @@
-package middlewear
+package middleweare
 
 import (
 	"fmt"

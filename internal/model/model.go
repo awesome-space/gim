@@ -6,6 +6,7 @@ import (
 	"gorm.io/gorm"
 )
 
+// BaseModel 基础数据库实体模型
 type BaseModel struct {
 	ID        uint           `gorm:"primaryKey;comment:主键"` // 主键
 	CreatedAt time.Time      `gorm:"comment:创建时间"`          // 创建时间
